@@ -17,10 +17,24 @@
 body{
     background: url('../images/banner.jpg') no-repeat center center fixed !important;
     display: compact;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: 100% 100%;
-    background-color: transparent;
+    background-size: cover;;
+    background-color: #FFFFFF;
+}
+.half-circle{
+  height: 20rem;
+  width: 40rem;
+  border: 0;
+  border-radius: 40rem 40rem 0 0;
+  -webkit-background-radius: 40rem 40rem 0 0;
+  -moz-background-radius: 40rem 40rem 0 0;
+  -o-background-radius: 40rem 40rem 0 0;
+  background: yellow;
+  vertical-align: bottom;
+  position: absolute;;
+  left: 0;
+  bottom: 0;
 }
