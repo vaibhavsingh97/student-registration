@@ -14,27 +14,85 @@
     width: device-width;
 }
 
-body{
+body {
     background: url('../images/banner.jpg') no-repeat center center fixed !important;
     display: compact;
     background-repeat: repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;;
+    background-size: cover;
     background-color: #FFFFFF;
 }
-.half-circle{
-  height: 20rem;
-  width: 40rem;
-  border: 0;
-  border-radius: 40rem 40rem 0 0;
-  -webkit-background-radius: 40rem 40rem 0 0;
-  -moz-background-radius: 40rem 40rem 0 0;
-  -o-background-radius: 40rem 40rem 0 0;
-  background: yellow;
-  vertical-align: bottom;
-  position: absolute;;
-  left: 0;
-  bottom: 0;
+
+
+/* Navigation */
+
+#nav-primary a.navbar-brand {
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+#nav-primary .btn-secondary-outline {
+    color: #FFFFFF;
+    background-color: #D9534F;
+}
+
+#nav-primary .btn-secondary-outline:hover {
+    background-color: #FFFFFF;
+    color: #D9534F;
+}
+
+#nav-primary .btn-secondary-outline.active, #nav-primary .btn-secondary-outline.focus, #nav-primary .btn-secondary-outline:active, #nav-primary .btn-secondary-outline:focus {
+    background-color: #fff;
+    color: #D9534F;
+}
+
+.main-login {
+    margin-top: 2em;
+}
+
+.form-signin {
+    /* max-width: 330px; */
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading, .form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#card1 {
+    float: none;
+    margin: 0px auto;
 }
