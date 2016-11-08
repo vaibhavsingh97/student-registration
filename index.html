@@ -1,65 +1,45 @@
 <!DOCTYPE html>
-<!--**************https://v4-alpha.getbootstrap.com/migration/**************-->
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,  shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css " integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi " crossorigin="anonymous ">
-    <link rel="stylesheet " type="text/css " href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>BML Munjal University</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet prefetch" type="text/css" href="css/bootstrap-theme.min.css">
 </head>
 
 <body>
-    <!-- Primary navigation -->
-    <nav id="nav-primary" class="navbar navbar-dark navbar-full bg-danger">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><span class="fa fa-university"></span>&nbsp;BML Munjal University</a>
-            <ul class="nav navbar-nav pull-right">
-              <button class="btn btn-secondary-outline" type="button" href="registartion.html"><span class="fa fa-graduation-cap"></span>&nbsp; New Student</button>
-            </ul>
-        </div>
-    </nav>
-    <div class="main-login">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                    <div class="card">
-                        <div class="card-block" id="card1">
-                            <form class="form-signin" action="registration.html" method="post">
-                                <h2 class="form-signin-heading"><span class="fa fa-lock"></span>&nbsp;Member Login</h2>
-                                <label for="inputEmail" class="sr-only">username</label>
-                                <input type="email" id="inputEmail" class="form-control" required autofocus>
-                                <label for="inputPassword" class="sr-only">Password</label>
-                                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                                <div class="checkbox">
-                                    <label>
-                                    <input type="checkbox" value="remember-me"> Remember me
-                                </label>
-                                </div>
-                                <button class="btn btn-lg btn-danger btn-block" type="submit"><span class="fa fa-sign-in"></span>&nbsp;Sign in</button>
-                            </form>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-md-offset-4">
+                <h1 class="text-center login-title">Sign in</h1>
+                <div class="account-wall">
+                    <img class="profile-img" src="images/user.png" alt="">
+                    <form class="form-signin" action="submit">
+                        <input type="text" class="form-control" placeholder="Username" required autofocus>
+                        <input type="password" class="form-control" placeholder="Password" required>
+                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                        <label class="checkbox pull-left">
+                        <input type="checkbox" value="remember-me">Remember me</label>
+                        <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+                    </form>
                 </div>
+                <a href="#" class="text-center new-account">New Student </a>
             </div>
         </div>
     </div>
-    <script>
-        $(function() {
-            var nua = navigator.userAgent
-            var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
-            if (isAndroid) {
-                $('select.form-control').removeClass('form-control').css('width', '100%')
-            }
-        })
-    </script>
-    <script src="https://use.fontawesome.com/2c1c2dd687.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js " integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7 " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js " integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8 " crossorigin="anonymous "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js " integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK " crossorigin="anonymous "></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/login.js"></script> -->
+    <script src="https://use.fontawesome.com/38ca98722f.js"></script>
+    <script src="https://cdnjs.com/libraries/1000hz-bootstrap-validator"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </body>
 
 </html>
