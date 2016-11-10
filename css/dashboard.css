@@ -1,4 +1,4 @@
-body {
+html,body {
     padding-top: 0px;
     margin: auto 0;
     height: 100%;
@@ -13,14 +13,19 @@ body {
 .navbar-fixed-top {
     border: 0;
 }
+
 .navbar-brand {
-  padding: 0px;
+    /*padding: 0;*/
+    height: 40px;
+    margin: -10px auto;
 }
+
 .navbar-brand>img {
-  height: 100%;
-  /*padding: -15px;*/
-  width: auto;
+    height: 40px;
+    padding: 0px;
+    width: auto;
 }
+
 .sidebar {
     display: none;
     height: 100%;
@@ -56,46 +61,37 @@ body {
             background-color: #f5f5f5;
             border-right: 1px solid #eee;
         }
-}
-
-
-/* Sidebar navigation */
-
-.nav-sidebar {
-    margin-right: -21px;
-    /* 20px padding + 1px border */
-    margin-bottom: 20px;
-    margin-left: -20px;
-    margin-top: 10px;
-    height: 100%;
-}
-
-.nav-sidebar>li>a {
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.nav-sidebar>.active>a, .nav-sidebar>.active>a:hover, .nav-sidebar>.active>a:focus {
-    color: #fff;
-    background-color: #428bca;
-}
-
-
-/*
+    }
+    /* Sidebar navigation */
+    .nav-sidebar {
+        margin-right: -21px;
+        /* 20px padding + 1px border */
+        margin-bottom: 20px;
+        margin-left: -20px;
+        margin-top: 10px;
+        height: 100%;
+        position: static;
+    }
+    .nav-sidebar>li>a {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .nav-sidebar>.active>a, .nav-sidebar>.active>a:hover, .nav-sidebar>.active>a:focus {
+        color: #fff;
+        background-color: #428bca;
+    }
+    /*
  * Main content
  */
-
-.main {
-    padding: 20px;
-}
-
-@media (min-width: 768px) {
     .main {
-        padding-right: 40px;
-        padding-left: 40px;
+        padding: 20px;
     }
-}
-
-.main .page-header {
-    margin-top: 0;
-}
+    @media (min-width: 768px) {
+        .main {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+    }
+    .main .page-header {
+        margin-top: 0;
+    }
