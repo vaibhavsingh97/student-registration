@@ -13,37 +13,31 @@
     <link rel="shortcut icon" href="images/bml_logo.png" type="image/png">
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
-    <script type="text/javascript">
-        $('#submit_button').click(function() {
-            console.log("Hello!");
-        });
+    <link type="text/css" rel="stylesheet" href="css/dashboard.css" media="screen,projection" />
+    <script type="javascript">
+        $(document).ready(function() { window_size = $(window).height(); $('.col').height(window_size); $(".button-collapse").sideNav(); });
     </script>
 </head>
 
 <body>
     <header>
-      <nav class="top-nav">
-        <div class="container" style="width:100%;">
-          <div class="nav-wrapper">
-            <a href="#!" class="brand-logo"><i class="material-icons">business</i>BML Munjal University</a>
-          </div>
+        <nav class="top-nav">
+            <div class="container" style="width:100%;">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">BML Munjal University</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="row">
+        <div class="col s2" style="background:#000; ">
+
         </div>
-      </nav>
-      <div class="row">
-        <div class="col s2" style="background:#000; height:100%;">
-          <p>
-            dacvdhuasdcvyudvcghdvhgjbcv
-          </p>
-        </div>
-        <div class="col s10" style="background:green; height:100%;">
-          <p>
-            djhbvuysdvgyusdvbgyuj
-          </p>
+        <div class="col s10" style="background:green;">
+
         </div>
 
-      </div>
-    </header>
+    </div>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
