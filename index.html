@@ -2,44 +2,123 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>BML Munjal University</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet prefetch" type="text/css" href="css/bootstrap-theme.min.css">
+    <meta charset="utf-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="name" content="content">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="images/bml_logo.png" type="image/png">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+    <script type="javascript">
+        $(".button-collapse").sideNav();
+    </script>
+    <script type="javascript" src="js/index.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-md-offset-4">
-                <h1 class="text-center login-title">Sign in</h1>
-                <div class="account-wall">
-                    <img class="profile-img" src="images/user.png" alt="">
-                    <form class="form-signin" action="submit">
-                        <input type="text" class="form-control" placeholder="Username" required autofocus>
-                        <input type="password" class="form-control" placeholder="Password" required>
-                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-                        <label class="checkbox pull-left">
-                        <input type="checkbox" value="remember-me">Remember me</label>
-                        <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
+    <div class="navnar-fixed">
+        <nav class="light-blue lighten-1 z-depth-4">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">BML Munjal University</a>
+            </div>
+        </nav>
+    </div>
+    <div class="section"></div>
+    <main>
+        <center>
+            <h5 class="indigo-text">Please, login into your account</h5>
+            <div class="section"></div>
+
+            <div class="container">
+                <div class="z-depth-4 grey lighten-4 row" style=" width:50%;display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+                    <form class="col s12" method="post">
+                        <div class="row">
+                            <div class="input-field col s12 center">
+                                <img src="images/ic_account_circle_black_48dp_2x.png" alt="" class="circle responsive-img valign profile-image-login">
+                            </div>
+                        </div>
+                        <!-- <div class='row'>
+                            <div class='col s12'>
+                            </div>
+                        </div> -->
+
+                        <div class='row' style="text-align:left;">
+                            <div class='input-field col s12'>
+                                <i class="material-icons prefix">email</i>
+                                <input class='validate email' type='email' name='email' />
+                                <label for='email' data-error="Sorry, We doesn't recognize that email." data-success="right">Enter your email</label>
+                            </div>
+                        </div>
+
+                        <div class='row' style="text-align:left;">
+                            <div class='input-field col s12'>
+                                <i class="material-icons prefix">lock_outline</i>
+                                <input class='validate' type='password' name='password' id='password' />
+                                <label for='password'>Enter your password</label>
+                            </div>
+
+                            <div class="row">
+                                <div class="col s6">
+                                    <p style="float:left;">
+                                        <input type="checkbox" id="remember_me">
+                                        <label for="remember_me"><b class="blue-text">Remember me</b></label>
+                                    </p>
+                                </div>
+                                <div class="col s6">
+                                    <p style="float:right">
+                                        <a href="#!"><b class="blue-text">Forgot Password?</b></a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- <label class="row">
+                              <p style="float: left;">
+                                <input type="checkbox" id="remember_me" />
+                                <label for="remember_me"><b class="blue-text">Remember me</b></label>
+                              </p>
+                              <p style='float: right;'>
+                                <a href="#!"><b class="blue-text">Forgot Password?</b></a>
+                              </p>
+                            </label> -->
+                        </div>
+
+                        <br />
+                        <center>
+                            <div class='row'>
+                                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect waves-light indigo' id="submit_button">Login</button>
+                            </div>
+                        </center>
                     </form>
                 </div>
-                <a href="#" class="text-center new-account">New Student </a>
             </div>
-        </div>
-    </div>
+            <b><label>Not a member?<a href="dashboard.html" class="tooltipped" data-position="top" data-delay="50" data-tooltip="New Student?"> Register Now</a></label></b>
+            <!-- <div class="container">
+                <div class="z-depth-4 grey lighten-4 row" style="display: inline-block;padding: 20px 20px 0px 20px; border: 1px solid #EEE;">
+                    <label class="col s12" style="text-align:center; width:100%; display: inline-block;">
+                        <div class='row'>
+                            <div class='col s12'>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- <script src="js/login.js"></script> -->
-    <script src="https://use.fontawesome.com/38ca98722f.js"></script>
-    <script src="https://cdnjs.com/libraries/1000hz-bootstrap-validator"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div> -->
+            </div>
+
+        </center>
+
+        <div class="section"></div>
+        <div class="section"></div>
+    </main>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
 </html>
