@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,44 +23,85 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
-  <body>
+    <script type="javascript">
+        $(function(){ $('[data-toggle="tooltip"]').tooltip(); $(".side-nav .collapse").on("hide.bs.collapse", function() { $(this).prev().find(".fa").eq(1).removeClass("fa-angle-right").addClass("fa-angle-down"); }); $('.side-nav .collapse').on("show.bs.collapse",
+        function() { $(this).prev().find(".fa").eq(1).removeClass("fa-angle-down").addClass("fa-angle-right"); }); });
+    </script>
+</head>
+
+<body>
     <!--<div id="throbber" style="display:none; min-height:120px;"></div>-->
-  <!--<div id="noty-holder"></div>-->
-  <div id="wrapper">
-      <!-- Navigation -->
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+    <!--<div id="noty-holder"></div>-->
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                   <span class="sr-only">Toggle navigation</span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#!">
-                <h4 style="text-align:center; padding-top:5px;">BML Munjal University</h4>
-              </a>
-          </div>
-          <!-- Top Menu Items -->
-          <ul class="nav navbar-right top-nav">
-              <!-- <li><a href="#" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Stats"><i class="fa fa-bar-chart-o"></i>
+                <a class="navbar-brand" href="#!">
+                    <h4 style="text-align:center; padding-top:5px;">BML Munjal University</h4>
+                </a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <!-- <li><a href="#" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Stats"><i class="fa fa-bar-chart-o"></i>
                   </a>
               </li> -->
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> User&nbsp; <b class="fa fa-angle-down"></b></a>
-                  <ul class="dropdown-menu">
-                      <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
-                      <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
-                  </ul>
-              </li>
-          </ul>
-          <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav side-nav">\
-                  <!-- <li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> User&nbsp; <b class="fa fa-angle-down"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
+                        <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <ul id="progress" style="margin-top:75px; margin-left:20px;">
+                        <li>
+                            <div class="node green"></div>
+                            <p>Step 1</p>
+                        </li>
+                        <li>
+                            <div class="divider grey"></div>
+                        </li>
+                        <li>
+                            <div class="node grey"></div>
+                            <p>Step 2</p>
+                        </li>
+                        <li>
+                            <div class="divider grey"></div>
+                        </li>
+                        <li>
+                            <div class="node grey"></div>
+                            <p>Step 3</p>
+                        </li>
+                        <li>
+                            <div class="divider grey"></div>
+                        </li>
+                        <li>
+                            <div class="node grey"></div>
+                            <p>Step 4</p>
+                        </li>
+                        <li>
+                            <div class="divider grey"></div>
+                        </li>
+                        <li>
+                            <div class="node grey"></div>
+                            <p>Step 5</p>
+                        </li>
+                    </ul>
+
+
+                    <!-- <li>
                       <a href="#" data-toggle="collapse" data-target="#submenu-1"><i class="fa fa-fw fa-search"></i> MENU 1 <i class="fa fa-fw fa-angle-down pull-right"></i></a>
                       <ul id="submenu-1" class="collapse">
                           <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 1.1</a></li>
@@ -84,29 +126,133 @@
                   <li>
                       <a href="faq"><i class="fa fa-fw fa fa-question-circle"></i> MENU 5</a>
                   </li> -->
-              </ul>
-          </div>
-          <!-- /.navbar-collapse -->
-      </nav>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
 
-      <div id="page-wrapper">
-          <div class="container-fluid">
-              <!-- Page Heading -->
-              <div class="row" id="main" >
-                  <div class="col-sm-12 col-md-12 well" id="content">
-                      <h1>Welcome Admin!</h1>
-                  </div>
-              </div>
-              <!-- /.row -->
-          </div>
-          <!-- /.container-fluid -->
-      </div>
-      <!-- /#page-wrapper -->
-  </div><!-- /#wrapper -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row" id="main">
+                    <div class="col-sm-12 col-md-12 well" id="content">
+                        <h1>Welcome User!</h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="content-1">
+                            <div class="box">
+                                <div class="info">
+                                    <h4 class="text-center">Title</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti atque, tenetur quam aspernatur corporis at explicabo nulla dolore necessitatibus doloremque exercitationem sequi dolorem architecto perferendis quas
+                                        aperiam debitis dolor soluta!</p>
+                                    <p>
+                                        Commodo nisi non consectetur voluptate incididunt mollit duis dolore amet amet tempor exercitation. Qui amet aute ea aute id ad aliquip proident. Irure duis qui labore deserunt enim in quis nisi sint consequat aliqua. Ex proident labore et laborum tempor
+                                        fugiat sint magna veniam minim. Nulla dolor labore adipisicing in enim mollit laboris fugiat eu. Aliquip minim cillum ullamco voluptate non dolore non ex duis fugiat duis ad. Deserunt cillum ad et nisi amet non
+                                        voluptate culpa qui do. Labore ullamco et minim proident est laborum mollit ad labore deserunt ut irure dolore. Reprehenderit ad ad irure ut irure qui est eu velit eu excepteur adipisicing culpa. Laborum cupidatat
+                                        ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
+                                    </p>
+                                    <!-- <a href="" class="btn">Link</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hide" id="content-2">
+                            <div class="box">
+                                <div class="info">
+                                    <h4 class="text-center">Title</h4>
+                                    <p>dvzfk bkf zkb ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk bkf zkb ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk bkf zkb ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk bkf zkb
+                                        ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk bkf zkb ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk bkf zkb ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk bkf zkb ffffffffffffffffffffffffff
+                                        ffffffffffffffffffffffffffdvzfk bkf zkb ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk bkf zkb ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk bkf zkb ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk
+                                        bkf zkb ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk bkf zkb ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk bkf zkb ffffffffffffffffffffffffff ffffffffffffffffffffffffffdvzfk bkf zkb ffffffffffffffffffffffffff
+                                        ffffffffffffffffffffffffff
+                                    </p>
+                                    <!-- <a href="" class="btn">Link</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 hide" id="content-1">
+                            <div class="box">
+                                <div class="info">
+                                    <h4 class="text-center">Title</h4>
+                                    <p>LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLmethcvdr adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
+                                    </p>
+                                    <p>LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLmethcvdr adipisicing culpa. Laborum cupidatat ullamco eu duis anim reprehenderit proident aute ad consectetur eiusmod.
+                                    </p>
+                                    <!-- Single button -->
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- <a href="" class="btn">Link</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        <input class="btn btn-lg btn-primary" type="button" value="Next" id="next" style="margin-left:20px;float:right;" />
+                    </div>
+                    <!-- <input type="button" value="Next" id="next" style="margin-left:20px;" /> -->
+                </div>
+
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <script lang="javascript">
+        var list = document.getElementById('progress'),
+            next = document.getElementById('next'),
+            clear = document.getElementById('clear'),
+            children = list.children,
+            completed = 0;
+
+        // simulate activating a node
+        next.addEventListener('click', function() {
+
+            // count the number of completed nodes.
+            completed = (completed === 0) ? 1 : completed + 2;
+            if (completed > children.length) return;
+
+            // for each node that is completed, reflect the status
+            // and show a green color
+            for (var i = 0; i < completed; i++) {
+                children[i].children[0].classList.remove('grey');
+                children[i].children[0].classList.add('green');
+
+                // if this child is a node and not divider,
+                // make it shine a little more
+                if (i % 2 === 0) {
+                    children[i].children[0].classList.add('activated');
+                }
+            }
+
+        }, false);
+
+        // // clear the activated state of the markers
+        // clear.addEventListener('click', function() {
+        //     for (var i = 0; i < children.length; i++) {
+        //         children[i].children[0].classList.remove('green');
+        //         children[i].children[0].classList.remove('activated');
+        //         children[i].children[0].classList.add('grey');
+        //     }
+        //     completed = 0;
+        // }, false);a
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
 </html>
