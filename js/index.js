@@ -10,11 +10,11 @@
 // });
 
 $(document).ready(function(){
-  $('input.autocomplete').autocomplete({
-    data: {
-	  "Apple": null,
-	  "Microsoft": null,
-	  "Google": 'http://placehold.it/250x250'
-	}
-  });
+  function validateForm(){
+    var x=document.forms["loginform"]["email"].value;
+    // var y=document.forms["loginform"]["password"].value;
+    if (x==null || x=="") {
+      alert("Please enter email and password");
+      return false;
+    }
 });

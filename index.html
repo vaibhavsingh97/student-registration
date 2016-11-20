@@ -16,6 +16,7 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
     <script type="javascript">
         $(".button-collapse").sideNav();
+        }
     </script>
     <script type="javascript" src="js/index.js"></script>
 </head>
@@ -37,7 +38,7 @@
             <div class="container">
                 <div class="z-depth-4 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
 
-                    <form class="col s12" method="post">
+                    <form class="col s12" method="post" name="loginform">
                         <div class="row">
                             <div class="input-field col s12 center">
                                 <img src="images/ic_account_circle_black_48dp_2x.png" alt="" class="circle responsive-img valign profile-image-login">
@@ -51,7 +52,7 @@
                         <div class="row" style="text-align:left;">
                             <div class="input-field col s12">
                                 <i class="material-icons prefix">email</i>
-                                <input class='validate email' type='email' name='email' />
+                                <input class='validate email' type='email' name='email'/>
                                 <label for='email' data-error="Sorry, We doesn't recognize that email." data-success="right">Enter your email</label>
                             </div>
                         </div>
@@ -90,7 +91,7 @@
                         <br />
                         <center>
                             <div class='row'>
-                                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect waves-light indigo' id="submit_button">Login</button>
+                                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect waves-light indigo' id="submit_button" onclick=" return validateForm()">Login</button>
                             </div>
                         </center>
                     </form>
