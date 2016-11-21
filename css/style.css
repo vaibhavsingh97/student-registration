@@ -1,4 +1,5 @@
-body {
+
+;body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -13,9 +14,9 @@ main {
 
 .btn:hover{
 	z-index:1000;
-  box-shadow:rgba(0, 0, 0, 0.3) 0 35px 35px 0;
-  -webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 35px 35px 0;
-  -moz-box-shadow:rgba(0, 0, 0, 0.3) 0 35px 35px 0;
+  box-shadow:rgba(0, 0, 0, 0.3) 0 5px 5px 0;
+  -webkit-box-shadow:rgba(0, 0, 0, 0.3) 0 5px 5px 0;
+  -moz-box-shadow:rgba(0, 0, 0, 0.3) 0 5px 5px 0;
 }
 
 

@@ -23,7 +23,7 @@
 
 <body>
     <div class="navnar-fixed">
-        <nav class="light-blue lighten-1 z-depth-4">
+        <nav class="grey darken-4 z-depth-4">
             <div class="nav-wrapper container">
                 <a href="#" class="brand-logo">BML Munjal University</a>
             </div>
@@ -91,7 +91,7 @@
                         <br />
                         <center>
                             <div class='row'>
-                                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect waves-light indigo' id="submit_button" onclick=" return validateForm()">Login</button>
+                                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect waves-light' id="submit_button" style="background:#337ab7; "onclick=" return validateForm()">Login</button>
                             </div>
                         </center>
                     </form>
@@ -116,7 +116,18 @@
         <div class="section"></div>
         <div class="section"></div>
     </main>
+    <script type="javascript">
+    $(document).ready(function(){
+      // function validateForm(){
+      //   var x=document.forms["loginform"]["email"].value;
+      //   // var y=document.forms["loginform"]["password"].value;
+      //   if (x==null || x=="") {
+      //     alert("Please enter email and password");
+      //     return false;
+      //   }
+    });
 
+    </script>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
